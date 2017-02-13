@@ -1,0 +1,74 @@
+<header class="header">
+    <span class="yo-ico hl">&#xe790;</span>
+
+    <p>
+        <a class="shu">热点</a>
+        <a ui-sref="follow">关注</a>
+    </p>
+    <span class="yo-ico hr">&#xe60c;</span>
+</header>
+<div class="Snav">
+    <a class="active">first</a>
+    <a>second</a>
+    <a>third</a>
+</div>
+<section class="section">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="cont">
+                    <ion-scroll>
+                    <div class="scroll">
+                        <!--<dl>
+                            <dt><img src="images/img1.jpg" alt=""/></dt>
+                            <dd>图片说明</dd>
+                        </dl>
+                        <dl class="centerDl"></dl>
+                        <dl>
+                            <dt><img src="images/img2.jpg" alt=""/></dt>
+                            <dd>图片说明</dd>
+                        </dl>
+                        <dl>
+                            <dt><img src="images/img3.jpg" alt=""/></dt>
+                            <dd>图片说明</dd>
+                        </dl>
+                        <dl class="centerDl"></dl>
+                        <dl>
+                            <dt><img src="images/img4.jpg" alt=""/></dt>
+                            <dd>图片说明</dd>
+                        </dl>
+                        <dl>
+                            <dt><img src="images/Pikachu.jpg" alt=""/></dt>
+                            <dd>图片说明</dd>
+                        </dl>
+                        <dl class="centerDl"></dl>
+                        <dl>
+                            <dt><img src="images/phone.png" alt=""/></dt>
+                            <dd>图片说明</dd>
+                        </dl>-->
+                        <dl ng-repeat="i in data">
+                            <dt><img ng-src="{{i.img}}" alt=""/></dt>
+                            <dd>{{i.title}}</dd>
+                        </dl>
+                    </div>
+                    </ion-scroll>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                22222222
+            </div>
+            <div class="swiper-slide">
+                3333333333
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <nav class="nav">
+        <a ui-sref="home"><i class="yo-ico">&#xe751;</i><br>首页</a>
+        <a ui-sref="search"><i class="yo-ico">&#xe752;</i><br>发现</a>
+        <a ui-sref="comaro" class="comaro"><i class="yo-ico">&#xe77e;</i></a>
+        <a ui-sref="admin"><i class="yo-ico">&#xe788;</i><br>我的</a>
+        <a ui-sref="login"><i class="yo-ico">&#xe779;</i><br>退出</a>
+    </nav>
+</footer>
